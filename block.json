@@ -1,0 +1,16 @@
+{
+    "apiVersion": 2,
+    "name": "custom/checkout-block",
+    "title": "Custom Checkout Block",
+    "category": "widgets",
+    "icon": "cart",
+    "description": "A custom block for WooCommerce checkout.",
+    "supports": {
+      "html": false
+    },
+    "textdomain": "custom-woocommerce-checkout-block",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css"
+  }
+  

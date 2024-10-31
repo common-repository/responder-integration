@@ -1,0 +1,11 @@
+{
+  "name": "custom-woocommerce-checkout-block",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^12.0.0"
+  }
+}

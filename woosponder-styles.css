@@ -1,0 +1,898 @@
+/* Add Font Awesome CDN */
+
+
+/* Global styles for woosponder admin pages */
+.woosponder-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    min-height: calc(100vh - 100px); /* Adjust height as needed */
+    direction: rtl; /* Right-to-left direction */
+    text-align: right; /* Align text to the right */
+    padding: 20px;
+}
+
+.nav-tab-active {
+    background-color: #1d4b8f; /* Color for active tabs */
+    border-bottom: 2px solid #f9f9f9; /* Same color as the tab content background */
+    color: #ffffff; /* Text color for active tabs */
+}
+
+
+.woosponder-wrap h1 {
+    font-size: 5px;
+}
+
+
+.woosponder-wrap h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Mapping Interface Styles */
+.mapping-interface {
+    background: #f4f4f4; /* Background color for the mapping interface */
+    border-radius: 5px; /* Rounded corners for the mapping interface */
+    padding: 20px; /* Padding inside the mapping interface */
+    margin-top: 20px; /* Space above the mapping interface */
+}
+
+.mapping-row {
+    width: 500px;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+/* Mapping Interface Styles */
+.mapping-row {
+    width: 500px;
+    justify-content: space-between; /* Spreads content evenly */
+    align-items: center; /* Aligns items vertically */
+    padding: 5px 0; /* Adds padding above and below each row */
+}
+
+.product-field {
+    width: 250px; /* Assigns a base width for product field */
+    margin-right: 5px; /* Adds margin to the right of the product field */
+    text-align: right;
+}
+
+.custom-field-select {
+    width: 250px; /* Assigns a base width for custom field dropdown */
+    margin-left: 5px; /* Adds margin to the left of the dropdown */
+    text-align: right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.product-field {
+    text-align: right; /* Aligns product field text to the left */
+}
+
+.custom-field-select {
+    text-align: right; /* Aligns dropdown to the right */
+    -webkit-appearance: none; /* Removes default styling on dropdowns */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff; /* Sets dropdown background color */
+    border: 1px solid #ccc; /* Sets border for dropdowns */
+    padding: 5px 10px; /* Adds padding inside dropdowns */
+    border-radius: 3px; /* Rounds the corners of dropdowns */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+
+.product-field {
+    width: 250px; /* Flex grow to take available space */
+    background-color: #fff; /* White background for product field */
+    border: 1px solid rgba(0, 0, 0, 0.667); /* Border for the product field */
+    border-radius: 3px; /* Rounded corners for the product field */
+    padding: 10px; /* Padding inside the product field */
+    margin-right: 10px; /* Space to the right of the product field */
+    color: rgba(0, 0, 0, 0.667); /* Text color for the product field */
+    font-weight: bold;
+    font-size: 14px; /* Font size for the product field */
+}
+
+.custom-field {
+    width: 250px; /* Flex grow to take available space */
+    height: 40px; /* Match the height with other dropdowns */
+    padding: 5px 10px; /* Padding inside the dropdown */
+    border: 1px solid #ccc; /* Border for the dropdown */
+    border-radius: 3px; /* Rounded corners for the dropdown */
+    font-size: 14px; /* Font size for the dropdown */
+    background-color: #fff; /* White background for the dropdown */
+    color: #333; /* Text color for the dropdown */
+}
+
+
+
+
+
+
+
+
+
+/* Adjusting the product dropdown */
+.product_selection {
+    background-color: #f2f2f2; /* Light gray background */
+    border: 1px solid #dcdcdc; /* Gray border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Space inside the border */
+    margin: 10px 0; /* Space outside, only top and bottom */
+    font-weight: bold; /* Bold font for the text inside */
+    color: #333; /* Dark text for better readability */
+    cursor: pointer; /* Changes the cursor to a hand icon when you hover over the element */
+}
+
+.product_selection:hover {
+    background-color: #e2e2e2; /* Slightly darker background on hover */
+}
+
+
+/* Adjusting the save button */  
+/* Adjusting the save button -------------------------------------------------*/
+#save_custom_fields_mapping {
+    height: 40px; /* Set the height of the button */
+    font-weight: bold;
+    padding: 0px 15px; /* Add more padding for a larger button */
+    background-color: #1d4b8f; /* Change background color */
+    color: white; /* Change text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    font-size: 14px; /* Increase font size */
+    margin-top: 14px; /* Add space above the button */
+    display: block; /* Make the button a block element */
+    width: 100px; /* Set a specific width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* Add more styles as needed */
+}
+
+/* Hover effect for the save button */
+#save_custom_fields_mapping:hover {
+    background-color: #275fb3; /* Lighter purple background on hover */
+}
+
+
+.custom-field option {
+    color: #333; /* Text color for options */
+}
+
+/* Add styles for disabled options */
+.custom-field option[disabled] {
+    color: #999; /* Lighter text color for disabled options */
+    background-color: #eee; /* Light background for disabled options */
+}
+
+/* Adjust the width of the dropdowns and text fields to be equal */
+.product-field, .custom-field {
+    width: 48%; /* Adjust width as needed, ensuring both fields and dropdowns are equal */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .mapping-row {
+        flex-direction: column; /* Stack fields and dropdowns on top of each other */
+    }
+
+    .product-field, .custom-field {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 5px; /* Space between stacked elements -------------------------------*/
+    }
+}
+
+.woosponder-wrap p {
+    font-size: 14px;
+    color: #666;
+}
+
+.woosponder-wrap form {
+    margin-top: 20px;
+}
+
+.woosponder-wrap form div {
+    margin-bottom: 15px;
+}
+
+.woosponder-wrap form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.woosponder-wrap form input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.woosponder-wrap form input[type="submit"] {
+    background-color: #1d4b8f;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.woosponder-wrap form input[type="submit"]:hover {
+    background-color: #275fb3;
+}
+
+.woosponder-wrap p {
+    line-height: 0.5;
+}
+
+/* Specific styles for the lists dropdown within the lists tab */
+.woosponder-lists-tab .woosponder-select {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px; /* Space below the dropdown */
+    background-color: #fff!important; /* White background */
+    color: #333!important; /* Text color */
+}
+
+.mapping-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the space between rows */
+}
+
+.product-field {
+    margin-right: 10px; /* Adjust the space between the label and the dropdown */
+}
+
+.custom-field {
+    margin-right: 10px; /* Adjust the space between dropdowns if necessary */
+}
+
+.lists-dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+
+#refresh_lists_icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px; /* Size of the icon */
+}
+
+.woosponder-lists-tab .woosponder-select option {
+    padding: 8px;
+    background: #fff; /* White background for options */
+    color: #333; /* Text color for options */
+}
+
+.order-status-section h4 {
+    font-size: 16px; /* Adjust as needed, assuming consistency with your other h4 elements */
+    color: #333; /* Text color, matching .woosponder-select */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.order-status-section p {
+    font-size: 14px; /* Matching your description for consistency */
+    color: #666; /* Slightly lighter for descriptions */
+    margin-bottom: 15px; /* Space below the description */
+}
+
+.order-status-section .woosponder-select, .order-status-section .custom-field {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px; /* Space below the dropdown */
+    background-color: #fff!important; /* Ensuring white background */
+    color: #333!important; /* Ensuring text color consistency */
+}
+
+.order-status-section .woosponder-select option, .order-status-section .custom-field option {
+    padding: 8px;
+    background: #fff; /* White background for options */
+    color: #333; /* Text color for options */
+}
+
+/* Footer Styles */
+.woosponder-footer {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    background: transparent; /* Background color */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.woosponder-footer .time-info {
+    display: flex;
+    flex-direction: row-reverse; /* Icon on the right for RTL */
+    align-items: center;
+    text-align: right; /* Text aligned to the right */
+    margin: 0 20px; /* Adjust margins as needed */
+}
+
+.woosponder-footer .time-info .text-wrapper {
+    margin-right: 10px; /* Space after the text for icons */
+    display: flex;
+    flex-direction: column; /* Keep the paragraph order for RTL */
+}
+
+.woosponder-footer .time-info p {
+    margin: 0; /* Remove default margins from paragraphs */
+    direction: rtl; /* Right-to-left text direction */
+}
+
+/* Icon class definitions using local SVG files, now smaller and gray */
+.woosponder-footer .icon-clock {
+    background-image: url('icons/wr-clock-solid.svg');
+    width: 16px;  /* Smaller size */
+    height: 16px; /* Smaller size */
+    background-size: cover;
+    display: inline-block;
+    filter: grayscale(100%) brightness(200%);
+    margin-right: 8px;  /* Adjust right margin to align the icon */
+    vertical-align: middle;  /* Align vertically with text */
+}
+
+.woosponder-footer .icon-envelope {
+    background-image: url('icons/wr-envelope-solid.svg');
+    width: 16px;  /* Smaller size */
+    height: 16px; /* Smaller size */
+    background-size: cover;
+    display: inline-block;
+    filter: grayscale(100%) brightness(200%);
+    margin-right: 8px;  /* Adjust right margin to align the icon */
+    vertical-align: middle;  /* Align vertically with text */
+}
+
+.woosponder-footer .icon-phone {
+    background-image: url('icons/wr-phone-solid.svg');
+    width: 16px;  /* Smaller size */
+    height: 16px; /* Smaller size */
+    background-size: cover;
+    display: inline-block;
+    filter: grayscale(100%) brightness(200%);
+    margin-right: 8px;  /* Adjust right margin to align the icon */
+    vertical-align: middle;  /* Align vertically with text */
+}
+
+/* Additional styles for email and phone to bring them closer to the center */
+.woosponder-footer div:not(.time-info) {
+    margin: 0 20px; /* Adjust margins as needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .woosponder-footer {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .woosponder-footer .time-info,
+    .woosponder-footer div:not(.time-info) {
+        width: 100%; /* Full width for stacked layout */
+        margin-top: 10px; /* Add space above for clarity */
+    }
+
+    .woosponder-footer .time-info .text-wrapper {
+        margin-right: 0; /* No margin for text-wrapper on small screens */
+        text-align: right; /* Align text to the right */
+    }
+}
+
+.woosponder-footer svg {
+    fill: #808080; /* Gray color */
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* Adjusting the product dropdown */
+#product_selection {
+    width: 250px; /* Set a max-width to control the width */
+    margin: 10px 0; /* Add some margin around the dropdown */
+    margin-left: 5px; /* Adds margin to the left of the dropdown */
+    text-align: right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Adjusting the save button */  
+/* Adjusting the save button -------------------------------------------------*/
+#save_custom_fields_mapping {
+    height: 40px; /* Set the height of the button */
+    font-weight: bold;
+    padding: 0px 15px; /* Add more padding for a larger button */
+    background-color: #1d4b8f; /* Change background color */
+    color: white; /* Change text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    font-size: 14px; /* Increase font size */
+    margin-top: 14px; /* Add space above the button */
+    display: block; /* Make the button a block element */
+    width: 100px; /* Set a specific width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* Add more styles as needed */
+}
+
+/* Hover effect for the save button */
+#save_custom_fields_mapping:hover {
+    background-color: #275fb3; /* Lighter purple background on hover */
+}
+
+
+.custom-field option {
+    color: #333; /* Text color for options */
+}
+
+/* Add styles for disabled options */
+.custom-field option[disabled] {
+    color: #999; /* Lighter text color for disabled options */
+    background-color: #eee; /* Light background for disabled options */
+}
+
+/* Adjust the width of the dropdowns and text fields to be equal */
+.product-field, .custom-field {
+    width: 48%; /* Adjust width as needed, ensuring both fields and dropdowns are equal */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .mapping-row {
+        flex-direction: column; /* Stack fields and dropdowns on top of each other */
+    }
+
+    .product-field, .custom-field {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 5px; /* Space between stacked elements -------------------------------*/
+    }
+}
+
+.woosponder-wrap p {
+    font-size: 14px;
+    color: #666;
+}
+
+.woosponder-wrap form {
+    margin-top: 20px;
+}
+
+.woosponder-wrap form div {
+    margin-bottom: 15px;
+}
+
+.woosponder-wrap form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.woosponder-wrap form input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.woosponder-wrap form input[type="submit"] {
+    background-color: #1d4b8f;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.woosponder-wrap form input[type="submit"]:hover {
+    background-color: #275fb3;
+}
+
+.woosponder-wrap p {
+    line-height: 0.5;
+}
+
+/* Specific styles for the lists dropdown within the lists tab */
+.woosponder-lists-tab .woosponder-select {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px; /* Space below the dropdown */
+    background-color: #fff!important; /* White background */
+    color: #333!important; /* Text color */
+}
+
+.mapping-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the space between rows */
+}
+
+.product-field {
+    margin-right: 10px; /* Adjust the space between the label and the dropdown */
+}
+
+.custom-field {
+    margin-right: 10px; /* Adjust the space between dropdowns if necessary */
+}
+
+.lists-dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+
+#refresh_lists_icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px; /* Size of the icon */
+}
+
+.woosponder-lists-tab .woosponder-select option {
+    padding: 8px;
+    background: #fff; /* White background for options */
+    color: #333; /* Text color for options */
+}
+
+/* Active connections*/
+
+.connection-tags {
+    display: inline-block;
+    margin-right: 5px; /* Adds space between tags */
+    padding: 5px 5px; /* Adjusts the padding to fit content */
+    background-color: #1d4b8f; /* Tag background color */
+    border-radius: 2px; /* Slightly rounded corners for tags */
+    line-height: normal; /* Sets a normal line height */
+    vertical-align: middle; /* Aligns tags vertically in the middle */
+    color: white;
+    border: 1px solid #241a8f; /* Tag border color */
+}
+
+
+.connection-row {
+    margin-right: 200px; /* Adds some space from the right edge of its parent */
+    margin-left: auto; /* Keeps the left margin flexible */
+    margin-bottom: 15px; /* Adds space between the rows */
+    max-width: 100%; /* Adjust the width as needed */
+    margin: 20px auto; /* Adds space at the top and bottom, and auto centers the block */
+    padding: 10px; /* Adjust the space inside the rows */
+    margin-bottom: 10px; /* Space between rows */
+    border: 1px solid #ccc; /* Optional: adds a border around each row */
+    background-color: #f9f9f9; /* Optional: background color for rows */
+    border-radius: 5px; /* Optional: rounded corners for rows */
+}
+
+
+/* Common styles for all statuses */
+/* Base styles for all order statuses */
+/* Base styles for all order statuses */
+.connection-order-status {
+    display: inline-block;
+    margin-right: 5px; /* Adds space between tags */
+    padding: 5px 5px; /* Adjusts the padding to fit content */
+    border-radius: 15px; /* Slightly rounded corners for tags */
+    line-height: normal; /* Sets a normal line height */
+    vertical-align: middle; /* Aligns tags vertically in the middle */
+}
+
+/* Specific styles for each order status in Hebrew */
+.status-ממתין-לתשלום {
+    background-color: #e5e5e5; /* Bootstrap 'pending' color */
+    color: #777777;
+}
+
+
+.status-בטיפול {
+    background-color: #cbe0c8; /* Bootstrap 'proccesing' color */
+    color: #64832f;
+    border: 1px solid #64832f; /* Tag border color */
+
+}
+
+.status-בהשהייה {
+    background-color: #f4deae; /* Bootstrap 'on hold' color */
+    color: #8d6824;
+}
+
+.status-הושלם {
+    background-color: #cbd7e0; /* Bootstrap 'completed' color */
+    color: #334352;
+}
+
+.status-בוטל {
+    background-color: #e5e5e5; /* Bootstrap 'cancelled' color */
+    color: #777777;
+}
+
+.status-הוחזר {
+    background-color: #e5e5e5; /* Bootstrap 'refunded' color */
+    color: #777777;
+}
+
+.status-נכשל {
+    background-color: #e0a6a5; /* Bootstrap 'failed' color */
+    color: #6c211e;
+}
+
+
+
+
+
+.delete-connection {
+    padding: 5px 10px;
+    background-color: #ff4d4d; /* Example red background */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*-----------------*/
+/*-----------------*/
+
+
+
+
+
+
+
+
+
+
+
+.delete-connection:hover {
+    background-color: #ff0000; /* Darker red on hover */
+}
+
+.connection-row {
+    font-size: 14px; /* Larger font size for readability */
+    color: #333; /* Dark gray color for better contrast */
+    /* Other font properties like font-family can be added here */
+}
+
+.connection-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.connection-row > * {
+    margin-right: 10px; /* Space between elements inside the row */
+}
+
+.connection-row:hover {
+    background-color: #e8e8e8; /* Slightly change the background on hover */
+}
+
+#search-bar {
+    margin-bottom: 30px; /* Adjust value as needed to add space below the search bar */
+}
+
+#SaveTheConnectionButton {
+    height: 40px; /* Set the height of the button */
+    font-weight: bold;
+    padding: 0 15px; /* Increase padding to ensure longer text fits */
+    background-color: #1d4b8f; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor to pointer */
+    font-size: 14px; /* Font size */
+    margin-top: 14px; /* Margin top */
+    display: block; /* Block display */
+    min-width: 100px; /* Minimum width to accommodate longer text */
+    box-sizing: border-box; /* Box sizing */
+    /* Other styles remain the same */
+}
+
+/* Adjust the hover effect if needed */
+#SaveTheConnectionButton:hover {
+    background-color: #275fb3; /* Background color on hover */
+}
+
+
+    #connections-list {
+        margin-right: 10px; /* Adds some space from the right edge of its parent */
+        margin-left: auto; /* Keeps the left margin flexible */
+        /* Other styles like max-width can remain the same */
+    }
+    
+
+    strong {
+        margin: 0;
+        padding: 0;
+    }
+    
+      /* Adjusts the margin around the GDPR message and opt-out link */
+/* Target the specific form-row for the email field to remove bottom margin */
+/* Increase specificity by targeting the checkout form ID and the billing email field */
+#billing_email_field {
+    margin-bottom: 0 !important; /* Remove any bottom margin */
+}
+
+/* Style the GDPR message and opt-out link with increased specificity to ensure styles apply */
+.woocommerce-checkout .woosponder-gdpr-message,
+.woocommerce-checkout .woosponder-gdpr-opt-out {
+    color: gray;
+    margin-top: 0 !important; /* No space above the GDPR message */
+    margin-bottom: 0 !important; /* No space below the GDPR message */
+    line-height: 1.2; /* Adjust line height for closer lines */
+    padding-top: 0 !important; /* Remove any top padding if present */
+    padding-bottom: 0 !important; /* Remove any bottom padding if present */
+}
+
+
+    
+
+
+
+
+
+    /* Style for the 'submit_gdpr_settings' button */
+    #submit_gdpr_settings {
+        height: 40px; /* Set the height of the button */
+        font-weight: bold; /* Make the font bold */
+        padding: 0px 15px; /* Add more padding for a larger button */
+        background-color: #1d4b8f; /* Change background color */
+        color: white; /* Change text color */
+        border: none; /* Remove border */
+        border-radius: 4px; /* Add rounded corners */
+        cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+        font-size: 14px; /* Increase font size */
+        margin-top: 14px; /* Add space above the button */
+        display: block; /* Make the button a block element */
+        width: 100px; /* Set a specific width */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    /* Hover effect for the 'submit_gdpr_settings' button */
+    #submit_gdpr_settings:hover {
+        background-color: #1d64cd; /* Lighter blue background on hover */
+    }
+
+
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+
+        background-color: #e4e9f7; /* Light blue background */
+        border: 1px solid #275fb3; /* Darker blue border */
+        border-radius: 15px; /* Rounded corners for pill-like shapes */
+        padding: 3px 10px; /* Top and bottom padding, left and right padding */
+        margin: 4px 2px; /* Margin around each tag */
+        font-size: 1em; /* Text size */
+        color: #000000; /* Text color */
+    }
+    .select2-container {
+        width: 40% !important; /* Make the Select2 field take up 100% of its parent container's width */
+    }
+    
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+ 
+        color: #ffffff; /* Color for the remove icon 'x' */
+        cursor: pointer;
+        border: none; /* Remove any border */
+        border-radius: 0; /* Square corners for the remove icon */
+        padding: 0 3px; /* Padding around the remove icon */
+        margin-right: 4px; /* Margin to the right of the remove icon */
+        margin-left: 0;
+    }
+    
+    /* When hovering over the remove icon, change the color */
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+        color: #a00; /* Darker shade of red for the hover state */
+    }
+    
+    /* Adjust the search field to align nicely with the tags */
+    .select2-container--default .select2-search--inline .select2-search__field {
+        margin-top: 5px; /* Align with the top of the tags */
+        height: auto; /* Adjust height automatically */
+        min-height: 32px; /* Minimum height to match the tags height */
+    }
+    
+    .select2-results__option {
+        display: inline-block; /* Display options in a line */
+        margin: 5px; /* Spacing between boxes */
+        padding: 5px; /* Padding inside boxes */
+        border: 1px solid #ddd; /* Border around each box */
+        border-radius: 5px; /* Rounded corners for the boxes */
+        background-color: #f9f9f9; /* Light background for the boxes */
+    }
+    
+  /* Customize the background and text color of the pills */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #275fb3; /* Green background */
+    color: white; /* White text */
+    border: 1px solid #0b1e3a; /* Green border */
+} 
+
+/*------------------------------------------------------*/
+
+/* Custom styles for WordPress admin */
+.mce-content-body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Adjust the layout within the GDPR settings tab */
+.woosponder-gdpr-settings {
+    max-width: 700px; /* Adjust the container width as necessary */
+}
+
+
+
+
+/* Ensure the iframe and textarea fill the container but respect padding/border */
+.wp-editor-container iframe,
+.wp-editor-container textarea.wp-editor-area {
+    width: calc(100% - 23px); /* Adjust based on padding/border */
+    height: 120px; /* Fixed height */
+}
+
+/* Hide the editor tabs */
+.wp-editor-tabs {
+    display: none;
+}
+
+/* Hide the block format (paragraph) dropdown */
+.mce-toolbar .mce-btn-group .mce-btn[aria-label="Formats"] {
+    display: none;
+}
+
+* Custom styles for WordPress admin */
+.mce-content-body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Adjust the layout within the GDPR settings tab */
+.woosponder-gdpr-settings {
+    max-width: 700px; /* Adjust the container width as necessary */
+}
+
+
+.small-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    direction: rtl; /* Right-to-left direction */
+    text-align: right; /* Align text to the right */
+    padding: 20px;
+}
+
+.small-heading h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Mapping Interface Styles */
+
+
+.small-heading form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
